@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import config from "./config";
 import {
   Button,
   Card,
@@ -19,7 +20,7 @@ import {
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function VoterApp() {
-  const baseUrl = `http://localhost:2000`;
+  const baseUrl = `${config.url}/exam`;
   const [voter, setVoter] = useState({
     id: "",
     name: "",
