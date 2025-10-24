@@ -20,7 +20,7 @@ import {
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function VoterApp() {
-  const baseUrl = `${config.url}/exam`;
+  const baseUrl = `${config.url}/voter`;
   const [voter, setVoter] = useState({
     id: "",
     name: "",
